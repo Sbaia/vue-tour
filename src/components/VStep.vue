@@ -51,7 +51,19 @@ export default {
     },
     isLast: {
       type: Boolean
-    }
+    },
+    skipLabel: {
+      type: String
+    },
+    previousLabel: {
+      type: String
+    },
+    nextLabel: {
+      type: String
+    },
+    finishLabel: {
+      type: String
+    },
   },
   data () {
     return {

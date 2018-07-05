@@ -20,6 +20,11 @@
         :stop="stop"
         :isFirst="isFirst"
         :isLast="isLast"
+        :skipLabel="skipLabel"
+        :previousLabel="previousLabel"
+        :nextLabel="nextLabel"
+        :finishLabel="finishLabel"
+
       >
         <!--<div v-if="index === 2" slot="actions">
           <a @click="nextStep">Next step</a>
@@ -96,6 +101,18 @@ export default {
     },
     numberOfSteps () {
       return this.steps.length
+    },
+    skipLabel() {
+      this.customOptions.skipLabel;
+    },
+    previousLabel() {
+      this.customOptions.previousLabel;
+    },
+    nextLabel() {
+      this.customOptions.nextLabel;
+    },
+    finishLabel() {
+      this.customOptions.finishLabel;
     }
   },
   methods: {

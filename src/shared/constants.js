@@ -7,7 +7,11 @@ export const DEFAULT_CALLBACKS = {
 
 export const DEFAULT_OPTIONS = {
   useKeyboardNavigation: true,
-  startTimeout: 0
+  startTimeout: 0,
+  skipLabel: 'Skip tour',
+  previousLabel: 'Previous',
+  nextLabel: 'Next',
+  finishLabel: 'Finish',
 }
 
 export const DEFAULT_STEP_OPTIONS = {
