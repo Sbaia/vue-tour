@@ -102,8 +102,9 @@ export default {
         this.params
       )
     } else {
-      console.error('[Vue Tour] The target element ' + this.step.target + ' of .v-step[id="' + this.hash + '"] does not exist!')
-      this.stop()
+      console.warn('[Vue Tour] The target element ' + this.step.target + ' of .v-step[id="' + this.hash + '"] does not exist! Skip to next step')
+      // this.stop()
+      this.nextStep();
     }
   }
 }
