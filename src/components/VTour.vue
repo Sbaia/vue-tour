@@ -103,16 +103,16 @@ export default {
       return this.steps.length
     },
     skipLabel() {
-      this.customOptions.skipLabel;
+      return this.customOptions.skipLabel;
     },
     previousLabel() {
-      this.customOptions.previousLabel;
+      return this.customOptions.previousLabel;
     },
     nextLabel() {
-      this.customOptions.nextLabel;
+      return this.customOptions.nextLabel;
     },
     finishLabel() {
-      this.customOptions.finishLabel;
+      return this.customOptions.finishLabel;
     }
   },
   methods: {
