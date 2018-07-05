@@ -71,7 +71,7 @@ export default {
     },
     finishLabel: {
       type: String
-    },
+    }
   },
   data () {
     return {

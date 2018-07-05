@@ -102,17 +102,17 @@ export default {
     numberOfSteps () {
       return this.steps.length
     },
-    skipLabel() {
-      return this.customOptions.skipLabel;
+    skipLabel () {
+      return this.customOptions.skipLabel
     },
-    previousLabel() {
-      return this.customOptions.previousLabel;
+    previousLabel () {
+      return this.customOptions.previousLabel
     },
-    nextLabel() {
-      return this.customOptions.nextLabel;
+    nextLabel () {
+      return this.customOptions.nextLabel
     },
-    finishLabel() {
-      return this.customOptions.finishLabel;
+    finishLabel () {
+      return this.customOptions.finishLabel
     }
   },
   methods: {

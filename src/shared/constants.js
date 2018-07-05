@@ -11,7 +11,7 @@ export const DEFAULT_OPTIONS = {
   skipLabel: 'Skip tour',
   previousLabel: 'Previous',
   nextLabel: 'Next',
-  finishLabel: 'Finish',
+  finishLabel: 'Finish'
 }
 
 export const DEFAULT_STEP_OPTIONS = {
