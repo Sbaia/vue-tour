@@ -108,7 +108,7 @@ var setPublicPath = __webpack_require__("HrLf");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
 var es6_function_name = __webpack_require__("f3/d");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"C://pvd//github//vue-tour//node_modules//.cache//vue-loader","cacheIdentifier":"02bea4b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VTour.vue?vue&type=template&id=b5c6947a
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"C://pvd//github//vue-tour//node_modules//.cache//vue-loader","cacheIdentifier":"02bea4b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VTour.vue?vue&type=template&id=50328110
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"v-tour"},[_vm._t("default",_vm._l((_vm.steps),function(step,index){return (_vm.currentStep === index)?_c('v-step',{key:index,attrs:{"step":step,"previous-step":_vm.previousStep,"next-step":_vm.nextStep,"stop":_vm.stop,"isFirst":_vm.isFirst,"isLast":_vm.isLast,"skipLabel":_vm.skipLabel,"previousLabel":_vm.previousLabel,"nextLabel":_vm.nextLabel,"finishLabel":_vm.finishLabel},scopedSlots:_vm._u([{key:"content",fn:function(ref){
 var step = ref.step;
 return _c('span',{},[_vm._t("content",[(step.content)?_c('div',{domProps:{"innerHTML":_vm._s(step.content)}}):_c('div',[_vm._v("This is a demo step! The id of this step is "+_vm._s(_vm.hash)+" and it targets "+_vm._s(step.target)+".")])],{step:step})],2)}},{key:"header",fn:function(ref){
@@ -120,11 +120,11 @@ var previousStep = ref.previousStep;
 var nextStep = ref.nextStep;
 var isLast = ref.isLast;
 var isFirst = ref.isFirst;
-return _c('span',{},[_vm._t("actions",[_c('div',{staticClass:"v-step__buttons"},[(!isLast)?_c('button',{staticClass:"v-step__button",on:{"click":stop}},[_vm._v("\n              "+_vm._s(_vm.skipLabel)+"\n            ")]):_vm._e(),(!isFirst)?_c('button',{staticClass:"v-step__button",on:{"click":previousStep}},[_vm._v("\n              "+_vm._s(_vm.previousLabel)+"\n            ")]):_vm._e(),(!isLast)?_c('button',{staticClass:"v-step__button",on:{"click":nextStep}},[_vm._v("\n              "+_vm._s(_vm.nextLabel)+"\n            ")]):_vm._e(),(isLast)?_c('button',{staticClass:"v-step__button",on:{"click":stop}},[_vm._v("\n              "+_vm._s(_vm.finishLabel)+"\n            ")]):_vm._e()])],{step:step})],2)}}])}):_vm._e()}),{currentStep:_vm.currentStep,steps:_vm.steps,previousStep:_vm.previousStep,nextStep:_vm.nextStep,stop:_vm.stop,isFirst:_vm.isFirst,isLast:_vm.isLast})],2)}
+return _c('span',{},[_vm._t("actions",[_c('div',{staticClass:"v-step__buttons"},[(!isLast)?_c('button',{staticClass:"v-step__button",on:{"click":stop}},[_vm._v("\n              "+_vm._s(_vm.skipLabel)+"\n            ")]):_vm._e(),(!isFirst)?_c('button',{staticClass:"v-step__button",on:{"click":previousStep}},[_vm._v("\n              "+_vm._s(_vm.previousLabel)+"\n            ")]):_vm._e(),(!isLast)?_c('button',{staticClass:"v-step__button",on:{"click":nextStep}},[_vm._v("\n              "+_vm._s(_vm.nextLabel)+"\n            ")]):_vm._e(),(isLast)?_c('button',{staticClass:"v-step__button",on:{"click":stop}},[_vm._v("\n              "+_vm._s(_vm.finishLabel)+"\n            ")]):_vm._e()])],{step:step,stop:stop,previousStep:previousStep,nextStep:nextStep,isLast:isLast,isFirst:isFirst})],2)}}])}):_vm._e()}),{currentStep:_vm.currentStep,steps:_vm.steps,previousStep:_vm.previousStep,nextStep:_vm.nextStep,stop:_vm.stop,isFirst:_vm.isFirst,isLast:_vm.isLast})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/VTour.vue?vue&type=template&id=b5c6947a
+// CONCATENATED MODULE: ./src/components/VTour.vue?vue&type=template&id=50328110
 
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/builtin/es6/defineProperty.js
 function _defineProperty(obj, key, value) {

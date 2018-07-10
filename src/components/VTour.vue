@@ -40,7 +40,7 @@
           </slot>
         </span>
         <span slot="actions" slot-scope="{ step, stop, previousStep, nextStep, isLast, isFirst }">
-          <slot name="actions" :step="step">
+          <slot name="actions" :step="step" :stop="stop" :previousStep="previousStep" :nextStep="nextStep" :isLast="isLast" :isFirst="isFirst">
             <div class="v-step__buttons">
               <button @click="stop" v-if="!isLast" class="v-step__button">
                 {{ skipLabel }}
