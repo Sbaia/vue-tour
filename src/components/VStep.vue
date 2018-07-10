@@ -1,33 +1,12 @@
 <template>
   <div class="v-step" :id="'v-step-' + hash" :ref="'v-step-' + hash">
-    <slot name="header">
-      <div v-if="step.header" class="v-step__header">
-        <div v-if="step.header.title" v-html="step.header.title"></div>
-      </div>
+    <slot name="header" :step="step">
     </slot>
 
-    <slot name="content">
-      <div class="v-step__content">
-        <div v-if="step.content" v-html="step.content"></div>
-        <div v-else>This is a demo step! The id of this step is {{ hash }} and it targets {{ step.target }}.</div>
-      </div>
+    <slot name="content" :step="step">
     </slot>
 
-    <slot name="actions">
-      <div class="v-step__buttons">
-        <button @click="stop" v-if="!isLast" class="v-step__button">
-          {{ skipLabel }}
-        </button>
-        <button @click="previousStep" v-if="!isFirst" class="v-step__button">
-          {{ previousLabel }}
-        </button>
-        <button @click="nextStep" v-if="!isLast" class="v-step__button">
-          {{ nextLabel }}
-        </button>
-        <button @click="stop" v-if="isLast" class="v-step__button">
-          {{ finishLabel }}
-        </button>
-      </div>
+    <slot name="actions" :step="step" :stop="stop" :previousStep="previousStep" :nextStep="nextStep" :isLast="isLast" :isFirst="isFirst">
     </slot>
 
     <div class="v-step__arrow" :class="{ 'v-step__arrow--dark': step.header && step.header.title }"></div>
@@ -59,18 +38,6 @@ export default {
     },
     isLast: {
       type: Boolean
-    },
-    skipLabel: {
-      type: String
-    },
-    previousLabel: {
-      type: String
-    },
-    nextLabel: {
-      type: String
-    },
-    finishLabel: {
-      type: String
     }
   },
   data () {

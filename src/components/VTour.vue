@@ -26,6 +26,37 @@
         :finishLabel="finishLabel"
 
       >
+        <span slot="content" slot-scope="{ step }">
+          <slot name="content" :step="step">
+            <div v-if="step.content" v-html="step.content"></div>
+            <div v-else>This is a demo step! The id of this step is {{ hash }} and it targets {{ step.target }}.</div>
+          </slot>
+        </span>
+        <span slot="header" slot-scope="{ step }">
+          <slot name="header" :step="step">
+            <div v-if="step.header" class="v-step__header">
+              <div v-if="step.header.title" v-html="step.header.title"></div>
+            </div>
+          </slot>
+        </span>
+        <span slot="actions" slot-scope="{ step, stop, previousStep, nextStep, isLast, isFirst }">
+          <slot name="actions" :step="step">
+            <div class="v-step__buttons">
+              <button @click="stop" v-if="!isLast" class="v-step__button">
+                {{ skipLabel }}
+              </button>
+              <button @click="previousStep" v-if="!isFirst" class="v-step__button">
+                {{ previousLabel }}
+              </button>
+              <button @click="nextStep" v-if="!isLast" class="v-step__button">
+                {{ nextLabel }}
+              </button>
+              <button @click="stop" v-if="isLast" class="v-step__button">
+                {{ finishLabel }}
+              </button>
+            </div>
+          </slot>
+        </span>
         <!--<div v-if="index === 2" slot="actions">
           <a @click="nextStep">Next step</a>
         </div>-->
