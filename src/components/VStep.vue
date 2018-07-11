@@ -86,6 +86,9 @@ export default {
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
     padding: 1rem;
     text-align: center;
+    position: absolute;
+    left: -1000;
+    top: -1000;
   }
 
   .v-step .v-step__arrow {
