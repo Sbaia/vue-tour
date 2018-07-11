@@ -9,7 +9,7 @@
     <slot name="actions" :step="step" :stop="stop" :previousStep="previousStep" :nextStep="nextStep" :isLast="isLast" :isFirst="isFirst">
     </slot>
 
-    <div class="v-step__arrow" :class="{ 'v-step__arrow--dark': step.header && step.header.title }"></div>
+    <div class="v-step__arrow" x-arrow :class="{ 'v-step__arrow--dark': step.header && step.header.title }"></div>
   </div>
 </template>
 
